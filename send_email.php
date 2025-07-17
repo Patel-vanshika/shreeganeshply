@@ -1,11 +1,11 @@
  <?php
-   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   if ($_SERVER["REQUEST_METHOD"] == "GET") {
        // Collect form data
-       $name = htmlspecialchars($_POST['name']);
-       $email = htmlspecialchars($_POST['email']);
-       $phone = htmlspecialchars($_POST['phone']);
-       $subject = htmlspecialchars($_POST['subject']);
-       $message = htmlspecialchars($_POST['message']);
+       $name = htmlspecialchars($_GET['name']);
+       $email = htmlspecialchars($_GET['email']);
+       $phone = htmlspecialchars($_GET['phone']);
+       $subject = htmlspecialchars($_GET['subject']);
+       $message = htmlspecialchars($_GET['message']);
        // Email settings
        $to = "svpatel442@gmail.com"; // Your registered email
        $subject = "New Contact Form Submission: $subject";
