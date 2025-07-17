@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ganesh Playwood And Laminates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/11023ca3-8795-459f-9c9d-22d076107d7b.png') no-repeat center center/cover;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .transition-slow {
+            transition: all 0.5s ease;
+        }
+        
+        input, textarea {
+            outline: none !important;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #eab308;
+            transition: width .3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919822871882" class="whatsapp-btn fixed bottom-8 right-8 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl z-50 shadow-lg hover:scale-110 transition-slow">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/441f228a-d95b-41b5-9c1d-79ca6d6bb949.png" alt="Shree Ganesh Playwood And Laminates Logo" class="h-12">
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-800 hover:text-yellow-500 font-medium">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-yellow-500 font-medium">About</a>
+                <a href="#products" class="nav-link text-gray-800 hover:text-yellow-500 font-medium">Products</a>
+                <a href="#gallery" class="nav-link text-gray-800 hover:text-yellow-500 font-medium">Gallery</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-yellow-500 font-medium">Contact</a>
+                <a href="#database" class="nav-link text-gray-800 hover:text-yellow-500 font-medium">Product Database</a>
+            </nav>
+            
+            <button class="md:hidden text-2xl text-gray-800" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white shadow-lg hidden absolute w-full left-0 top-full z-50 transition-all duration-300" id="mobile-menu">
+            <div class="flex flex-col px-4 py-3 space-y-3">
+                <a href="#home" class="text-gray-800 hover:text-yellow-500 font-medium py-2">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-yellow-500 font-medium py-2">About</a>
+                <a href="#products" class="text-gray-800 hover:text-yellow-500 font-medium py-2">Products</a>
+                <a href="#gallery" class="text-gray-800 hover:text-yellow-500 font-medium py-2">Gallery</a>
+                <a href="#contact" class="text-gray-800 hover:text-yellow-500 font-medium py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32" id="home">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Quality Plywood & Laminates</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experience durability and elegance with our superior range of plywood and laminate products</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#products" class="px-8 py-3 bg-yellow-500 text-gray-900 font-semibold rounded-lg hover:bg-yellow-600 transition-slow">Our Products</a>
+                <a href="#contact" class="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-slow">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white" id="about">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4dffc579-764e-4ccf-bb72-cca100da5135.png" alt="Showroom interior of Shree Ganesh Playwood And Laminates with various wood products displayed" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">About Shree Ganesh Playwood And Laminates</h2>
+                    <p class="text-gray-600 mb-6">With years of experience in the industry, Shree Ganesh Playwood And Laminates has established itself as a trusted name in Nashik for premium quality plywood and laminate products.</p>
+                    <p class="text-gray-600 mb-6">We pride ourselves on offering only the highest quality materials, ensuring durability and aesthetic appeal for all your interior needs. Our extensive range of products caters to both residential and commercial projects.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Quality Assurance</h4>
+                                <p class="text-gray-600 text-sm">Certified materials with strict quality checks</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3 mt-1">
+                                <i class="fas fa-truck text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Timely Delivery</h4>
+                                <p class="text-gray-600 text-sm">Prompt and reliable delivery services</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3 mt-1">
+                                <i class="fas fa-rupee-sign text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Competitive Pricing</h4>
+                                <p class="text-gray-600 text-sm">Best prices without compromising quality</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3 mt-1">
+                                <i class="fas fa-headset text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Expert Support</h4>
+                                <p class="text-gray-600 text-sm">Knowledgeable staff to guide your choices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg mb-8">
+                        <h4 class="font-bold text-gray-800 mb-2">Owner Details</h4>
+                        <p class="text-gray-600 mb-2"><strong>Name:</strong> Suresh Jadwani</p>
+                        <p class="text-gray-600 mb-2"><strong>Phone:</strong> +91 9822871882</p>
+                        <p class="text-gray-600 mb-2"><strong>Email:</strong> svpatel442@gmail.com</p>
+                        <p class="text-gray-600"><strong>Address:</strong> Plot No. 29, Trigrania Road, Nr. Maruti Waffers, Dwarka, Nashik-422011</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-2">Owner: Suresh Jadwani</h4>
+                        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> Plot No. 29, Trigrania Road, Nr. Maruti Waffers, Dwarka, Nashik-422011</p>
+                        <p class="text-gray-600"><i class="fas fa-phone-alt mr-2 text-yellow-500"></i> +91 9822871882</p>
+                        <p class="text-gray-600"><i class="fas fa-envelope mr-2 text-yellow-500"></i> svpatel442@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Database Section -->
+    <section class="py-20 bg-gray-100" id="database">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Product Database</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Search our extensive catalog of plywood and laminate products</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="mb-6">
+                    <input type="text" placeholder="Search products..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500">
+                </div>
+                <!-- Product database table would be dynamically populated -->
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3 text-left">Product</th>
+                                <th class="p-3 text-left">Type</th>
+                                <th class="p-3 text-left">Thickness</th>
+                                <th class="p-3 text-left">Price</th>
+                                <th class="p-3 text-left">In Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody id="product-table">
+                            <!-- Rows will be dynamically added -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-20 bg-gray-100" id="products">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Premium Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of high-quality plywood and laminate solutions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition-slow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/999bf900-870b-431c-a3b1-35803cc9fe63.png" alt="Premium plywood sheets stacked with wood grain texture visible" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Premium Plywood</h3>
+                        <p class="text-gray-600 mb-4">High-grade plywood with excellent durability and finish for all construction needs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-500 font-bold">Variants Available</span>
+                            <a href="#contact" class="text-yellow-500 hover:text-yellow-600 font-medium">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition-slow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7bd41700-3eec-40b4-839f-b8f29ed43915.png" alt="Modern laminate sheets in various colors and patterns displayed vertically" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Decorative Laminates</h3>
+                        <p class="text-gray-600 mb-4">Stylish and durable laminate sheets available in numerous designs and textures.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-500 font-bold">50+ Designs</span>
+                            <a href="#contact" class="text-yellow-500 hover:text-yellow-600 font-medium">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition-slow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4cc38f93-c5e5-4811-9f4c-9c629379a6f9.png" alt="Waterproof plywood sheets being tested with water droplets beading on surface" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Waterproof Plywood</h3>
+                        <p class="text-gray-600 mb-4">Special treatment makes these plywood sheets resistant to water damage and humidity.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-500 font-bold">Commercial Grade</span>
+                            <a href="#contact" class="text-yellow-500 hover:text-yellow-600 font-medium">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition-slow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8388d41-25f9-4b09-a970-693e997ee050.png" alt="Engineered wood veneer sheets with natural wood grain patterns arranged neatly" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Veneer Sheets</h3>
+                        <p class="text-gray-600 mb-4">Natural wood veneers that bring elegance to furniture and interiors.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-500 font-bold">Wood Varieties</span>
+                            <a href="#contact" class="text-yellow-500 hover:text-yellow-600 font-medium">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition-slow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cf9fbd40-844a-470c-ac07-34612e915e0f.png" alt="Medium density fiberboard panels with smooth finish stacked horizontally" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">MDF Boards</h3>
+                        <p class="text-gray-600 mb-4">Medium Density Fiberboards perfect for furniture making and interior applications.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-500 font-bold">Multiple Thickness</span>
+                            <a href="#contact" class="text-yellow-500 hover:text-yellow-600 font-medium">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition-slow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1281f396-8d05-48d6-a6bb-0064cd3ad923.png" alt="Plywood and laminate accessories including edge bands, adhesives and hardware" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Accessories</h3>
+                        <p class="text-gray-600 mb-4">Complete range of installation accessories including adhesives and edge bands.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-500 font-bold">All Essentials</span>
+                            <a href="#contact" class="text-yellow-500 hover:text-yellow-600 font-medium">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white" id="gallery">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Work Gallery</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See our premium products in beautiful applications</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative overflow-hidden rounded-lg group h-64">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1781ea83-f103-4992-9b33-da373b5335a7.png" alt="Modern kitchen with laminate cabinets and plywood base in golden brown finish" class="w-full h-full object-cover group-hover:scale-105 transition-slow">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <span class="text-white text-xl font-medium">Kitchen Interiors</span>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-lg group h-64">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b22f2c3c-4511-4f83-96cd-51a0dcf7eea5.png" alt="Contemporary wardrobe with glossy laminate finish in master bedroom setting" class="w-full h-full object-cover group-hover:scale-105 transition-slow">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <span class="text-white text-xl font-medium">Wardrobe Designs</span>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-lg group h-64">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62979662-0e3b-4ae2-94a1-c40a40508bd6.png" alt="Office cabin with plywood paneling and laminate workstations in corporate setting" class="w-full h-full object-cover group-hover:scale-105 transition-slow">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <span class="text-white text-xl font-medium">Office Furniture</span>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-lg group h-64">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e7d802d-9b6b-4fb3-85ea-aa00e38c4e58.png" alt="Living room with plywood entertainment unit and laminate wall paneling" class="w-full h-full object-cover group-hover:scale-105 transition-slow">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <span class="text-white text-xl font-medium">Living Room Solutions</span>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-lg group h-64">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1801041b-1727-4454-95eb-a3ad8f5f0b85.png" alt="Modular shoe rack unit with plywood structure and laminate finish" class="w-full h-full object-cover group-hover:scale-105 transition-slow">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <span class="text-white text-xl font-medium">Storage Solutions</span>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-lg group h-64">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/441080e7-284f-4454-bd60-baaf33233307.png" alt="Detail shot of laminate edge banding and plywood joints in custom furniture piece" class="w-full h-full object-cover group-hover:scale-105 transition-slow">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-slow">
+                        <span class="text-white text-xl font-medium">Precision Craftsmanship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Trusted by hundreds of satisfied customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600 text-sm">1 week ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Excellent quality plywood that exceeded my expectations. The team at Shree Ganesh helped me choose the right material for my kitchen cabinets."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e9284ce-8e3d-4f0b-add7-55f4405313ee.png" alt="Portrait of Ramesh Patel, satisfied customer" class="w-12 h-12 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold">Ramesh Patel</h4>
+                            <p class="text-gray-600 text-sm">Homeowner, Nashik</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600 text-sm">3 weeks ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">"We've been sourcing our materials from Shree Ganesh for all our projects. Consistent quality and reliable delivery makes them our preferred supplier."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ed05adc-2e3f-47e2-8f0d-606c9f395181.png" alt="Portrait of Priya Deshpande, interior designer" class="w-12 h-12 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold">Priya Deshpande</h4>
+                            <p class="text-gray-600 text-sm">Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600 text-sm">2 months ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The waterproof plywood we purchased has held up perfectly in our restaurant kitchen despite the humidity. Highly recommended for commercial use."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a69fde82-2a49-4497-a319-5a0b996fc6a7.png" alt="Portrait of Vikram Joshi, restaurant owner" class="w-12 h-12 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold">Vikram Joshi</h4>
+                            <p class="text-gray-600 text-sm">Restaurant Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 md:pr-12 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Have questions about our products or services? Contact us today and our team will be happy to assist you.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Our Address</h4>
+                                <p class="text-gray-600">Plot No. 29, Trigrania Road, Nr. Maruti Waffers, Dwarka, Nashik-422011</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Phone Number</h4>
+                                <p class="text-gray-600">+91 9822871882</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Email Address</h4>
+                                <p class="text-gray-600">svpatel442@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-4 mt-1">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Opening Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                <p class="text-gray-600">Sunday: Holiday</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-yellow-500 hover:bg-gray-200 transition-slow">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-yellow-500 hover:bg-gray-200 transition-slow">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-yellow-500 hover:bg-gray-200 transition-slow">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h3>
+                        <form id="contact-form" action="send_email.php" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500">
+                                    <option value="">Select Subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="product">Product Inquiry</option>
+                                    <option value="quote">Quote Request</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-slow">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.4240707024987!2d73.82628831473391!3d20.010298327001213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddebc0ec12d9eb%3A0x10f4ad1dbfba5f68!2sTrigrania%20Rd%2C%20Dwarka%2C%20Nashik%2C%20Maharashtra%20422011!5e0!3m2!1sen!2sin!4v1624538367244!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                title="Map of Shree Ganesh Playwood And Laminates location"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/602f8859-89dd-416f-a7e7-3eae4fd474fe.png" alt="Shree Ganesh Playwood And Laminates Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Providing premium quality plywood and laminate products since 2005. Trusted by homeowners and professionals across Nashik.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-yellow-500 transition-slow">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition-slow">About Us</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-yellow-500 transition-slow">Products</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-yellow-500 transition-slow">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition-slow">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-slow">Premium Plywood</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-slow">Decorative Laminates</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-slow">Waterproof Plywood</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-slow">Veneer Sheets</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-slow">MDF Boards</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <address class="not-italic">
+                        <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 inline-block"></i> Plot No. 29, Trigrania Road, Nr. Maruti Waffers, Dwarka, Nashik-422011</p>
+                        <p class="text-gray-400 mb-2"><i class="fas fa-phone-alt mr-2 inline-block"></i> +91 9822871882</p>
+                        <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 inline-block"></i> svpatel442@gmail.com</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 Shree Ganesh Playwood And Laminates. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize product database
+        const products = [
+            {name: "Premium Plywood", type: "Plywood", thickness: "12mm", price: "₹850", stock: "Yes"},
+            {name: "Waterproof Plywood", type: "Plywood", thickness: "18mm", price: "₹1200", stock: "Yes"},
+            // Add more products as needed
+        ];
+
+        function populateProductTable() {
+            const table = document.getElementById('product-table');
+            products.forEach(product => {
+                const row = table.insertRow();
+                row.innerHTML = `
+                    <td class="p-3 border-b">${product.name}</td>
+                    <td class="p-3 border-b">${product.type}</td>
+                    <td class="p-3 border-b">${product.thickness}</td>
+                    <td class="p-3 border-b">${product.price}</td>
+                    <td class="p-3 border-b">${product.stock}</td>
+                `;
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            populateProductTable();
+        });
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if(!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('block');
+                    }
+                }
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contact-form');
+        
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Submit the form to send_email.php
+                contactForm.submit();
+                
+                // Show confirmation message
+                alert(`Thank you, ${name}! Your message has been sent. We'll contact you soon.`);
+            });
+        }
+        
+        // Product Card Animation
+        const productCards = document.querySelectorAll('.product-card');
+        
+        productCards.forEach(card => {
+            const img = card.querySelector('img');
+            
+            card.addEventListener('mousemove', (e) => {
+                const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+                const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+                card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            });
+            
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'none';
+                img.style.transform = 'scale(1.1)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'transform 0.5s ease';
+                card.style.transform = 'translateY(-10px)';
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
