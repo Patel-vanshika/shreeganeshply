@@ -1,15 +1,15 @@
  <?php
-   if ($_SERVER["REQUEST_METHOD"] == "GET") {
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
        // Collect form data
-       $name = htmlspecialchars($_GET['name']);
-       $email = htmlspecialchars($_GET['email']);
-       $phone = htmlspecialchars($_GET['phone']);
-       $subject = htmlspecialchars($_GET['subject']);
-       $message = htmlspecialchars($_GET['message']);
+       $name = htmlspecialchars($_POST['name']);
+       $email = htmlspecialchars($_POST['email']);
+       $phone = htmlspecialchars($_POST['phone']);
+       $subject = htmlspecialchars($_POST['subject']);
+       $message = htmlspecialchars($_POST['message']);
        // Email settings
        $to = "svpatel442@gmail.com"; // Your registered email
        $subject = "New Contact Form Submission: $subject";
-       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
+       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage: $message";
        $headers = "From: $email";
        // Send email
        if (mail($to, $subject, $body, $headers)) {
@@ -17,7 +17,5 @@
        } else {
            echo "Failed to send message.";
        }
-   } else {
-       echo "Invalid request.";
-   }
+   } 
    ?>
